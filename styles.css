@@ -11,6 +11,13 @@ body {
     overflow: hidden;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 h1 {
     text-align: center;
     color: #5D5C61;
@@ -45,4 +52,25 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Social link styles */
+.social-links {
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.social-links a {
+    color: #c1976e; /* Your chosen color */
+    margin-left: 10px; /* Spacing between icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-links a:hover {
+    opacity: 0.7; /* Optional: change opacity on hover */
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    margin-top: 20px; /* Add space above the footer */
 }

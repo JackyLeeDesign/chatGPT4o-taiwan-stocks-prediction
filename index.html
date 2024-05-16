@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <title>ChatGPT4o Stock Info Prediction</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>ChatGPT4o Stock Information Prediction</h1>
+        <!-- Navigation or Header Section -->
+        <header class="header">
+            <h1>ChatGPT4o Stock Information Prediction</h1>
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/jackylee_idea/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="instagram-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/JackyLeeDesign" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
         <div id="predictionResult" class="result"></div>
     </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        Site by Jacky Lee &copy; <span id="currentYear"></span>
+    </footer>
+
     <script src="script.js"></script>
+    <script>
+        // Set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
