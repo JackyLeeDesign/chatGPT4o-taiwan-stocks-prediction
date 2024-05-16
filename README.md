@@ -15,12 +15,13 @@ Please note that investing in stocks carries inherent risks, including the poten
 The following prompt was crafted to interact with GPT-4, aiming to simulate a scenario where a financial analyst (played by GPT-4) provides stock price predictions and technical analysis:
 
 ```python
+# Define prompt for GPT-4
 prompt = (
     f"You are a financial analyst, and I am your client. This is important to me. Predicting failure will result in a loss of my trust."
     f"I need you to help me predict the next opening stock price and provide relevant technical analysis based on the following data."
     f"News: {formatted_news} Stock price: {formatted_stock_data}, Industry share: {stock_industry}, Stock price prediction for the first five days: {get_stock_info_prediction_five_days(stockNo,5)}, Today's date: {time.strftime('%Y-%m-%d')}, Other reference information: https://tw.stock.yahoo.com/quote/{stockNo}.TW"
-    f"First, determine the K value and D value calculated by you based on the [stock price prediction data for the first five days] and [today's date], which will be used in subsequent calculations"
-    f"Then, check the news information of the top 5 companies that account for {stockNo} in the past 2 days, which can be used as a reference for stock price prediction"
+    f"Today's K value - {kd_value["K_value"]}, Today's D value - {kd_value["D_value"]}"
+    f"First, check the news information of the top 5 companies that account for {stockNo} in the past 2 days, which can be used as a reference for stock price prediction"
     f"Also, please check the news of the main customers of these companies in the past 2 days, which can be used as a reference for stock price prediction"
     f"Then check the relevant technical standards of {stockNo} on the Internet today as a reference"
     f"Analysis reference points 1. If the KD value has a golden cross, when the K value breaks through the D value from below, it is called the 'KD golden cross', indicating that the stock price trend has turned bullish, and the buy signal is provided. Analytical suggestions please remind me 'buy point'"
@@ -34,7 +35,6 @@ prompt = (
     f"Next opening price prediction: (Based on the news information I provided, the news information you queried, and the stock market price in the past six months, and the other reference information I provided, predict according to your technical and professional analysis) ex.1xx.x (TWD)"
     f"RSV based on 9 days: (The calculation formula is (today's closing price - the lowest price in the past 9 days) / (the highest price in the past 9 days - the lowest price in the past 9 days) * 100)"
     f"20-day average volume: (The calculation formula is => the number of shares traded within 20 days (look back 20 days from the stock price data, including today by default, if there is no data today, calculate it one day earlier) / 20)"
-    f"Today's K value - {kd_value["K_value"]}, Today's D value - {kd_value["D_value"]}"
     f"Analysis suggestions: (Based on the analysis points I provided and your technical analysis, as well as your views on current affairs, international, and social trends, explain your analysis, provide buy points, sell points, continuous observation, etc. Suggestions)"
 )
 ```
