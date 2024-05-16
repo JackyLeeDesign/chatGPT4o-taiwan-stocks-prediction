@@ -20,7 +20,7 @@ prompt = (
     f"You are a financial analyst, and I am your client. This is important to me. Predicting failure will result in a loss of my trust."
     f"I need you to help me predict the next opening stock price and provide relevant technical analysis based on the following data."
     f"News: {formatted_news} Stock price: {formatted_stock_data}, Industry share: {stock_industry}, Stock price prediction for the first five days: {get_stock_info_prediction_five_days(stockNo,5)}, Today's date: {time.strftime('%Y-%m-%d')}, Other reference information: https://tw.stock.yahoo.com/quote/{stockNo}.TW"
-    f"K value - {kd_value["K_value"]}, D value - {kd_value["D_value"]}"
+    f"The latest K value - {kd_value["K_value"]},the latest D value - {kd_value["D_value"]}"
     f"First, check the news information of the top 5 companies that account for {stockNo} in the past 2 days, which can be used as a reference for stock price prediction"
     f"Also, please check the news of the main customers of these companies in the past 2 days, which can be used as a reference for stock price prediction"
     f"Then check the relevant technical standards of {stockNo} on the Internet today as a reference"
