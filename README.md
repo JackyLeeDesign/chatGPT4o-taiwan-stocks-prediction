@@ -39,6 +39,7 @@ prompt = (
     f"f. If KD > 85 and today's lowest price < yesterday's, 'prepare to sell'. If the same for prior day, 'sell half'.\n"
     f"g. If KD < 20 and today's highest price > yesterday's, 'prepare to buy'. If the same for prior day, 'buy in'.\n"
     f"h. If KD > 85, stock hits daily upper limit, and today's volume is 3x the 20-day avg., 'sell half'.\n\n"
+    f"Note: If there are no stock prices for today, this means the market has not opened yet. In that case, use the date of the latest stock price data as today's date.\n\n"
     f"Provide these results concisely:\n"
     f"1. Next opening price prediction: (Provide based on news, queried info, historical market data, and professional tech analysis) e.g., 1xx.x (TWD)\n"     
     f"2. Next closing price prediction: (Same references and analysis as opening price) e.g., 1xx.x (TWD)\n"
