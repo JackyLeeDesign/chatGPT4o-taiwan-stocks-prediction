@@ -42,6 +42,7 @@ function getPrediction() {
             }
         })
         .catch(error => {
+            resultElement.innerHTML = `<p>The webpage is currently undergoing maintenance...</p>`;
             console.log('Error:', error);
         });
     });
