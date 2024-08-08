@@ -21,7 +21,7 @@ prompt = (
     f"Here is the relevant data:\n"  
     f"1. Stock price data: {formatted_stock_data}\n"  
     f"2. Industry share: {stock_industry}\n"  
-    f"3. Date: {time.strftime('%Y-%m-%d')}\n"  
+    f"3. Today's date: {time.strftime('%Y-%m-%d')}\n"  
     f"4. Latest news:\n{news_summary}\n" 
     f"5. Latest K value: {kd_value['K_value']}\n"  
     f"6. Latest D value: {kd_value['D_value']}\n\n"  
@@ -39,12 +39,13 @@ prompt = (
     f"h. If KD > 85, stock hits daily upper limit, and today's volume is 3x the 20-day avg., 'sell half'.\n\n"  
     f"Note: If there are no stock prices for today, this means the market has not opened yet. In that case, use the date of the latest stock price data as today's date.\n\n"  
     f"Provide these results concisely:\n"
-    f"1. Recent news: {news_summary}, please list the key news in English after sorting out the news."
+    f"1. Recent news: {news_summary}, please list the key news in English after sorting out the news. (You don't need to mention 'Translated to English')"
     f"2. Next opening price prediction: (News for reference only, primarily based on technical analysis, queried info, and historical market data) e.g., 1xx.x (TWD)\n"       
     f"3. Next closing price prediction: (Same references and analysis as opening price) e.g., 1xx.x (TWD)\n"  
     f"4. 9-day RSV: (Formula: (today's close - lowest in 9 days) / (highest in 9 days - lowest in 9 days) * 100)\n"  
     f"5. 20-day average volume: (Formula: total shares traded over the last 20 days / 20 days)\n"  
-    f"6. Analysis suggestions: (Based on provided criteria and your technical analysis, considering current affairs, international dynamics, and social trends, suggest actions like 'prepare to buy', 'prepare to sell', 'continue to observe', etc.)\n"  
+    f"6. Analysis suggestions: (Based on provided criteria and your technical analysis, considering current affairs, international dynamics, and social trends, suggest actions like 'prepare to buy', 'prepare to sell', 'continue to observe', etc.)\n"
+    f"You don't need to add 'Please let me know if you need further details or additional analysis.' at the end"
 ) 
 ```
 
