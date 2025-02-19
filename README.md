@@ -2,9 +2,9 @@
 
 Welcome to the `Taiwan-Stock-Prediction-App` repository! This web application is designed to provide deep analytical insights into the Taiwanese stock market, with a special focus on prominent ETFs such as 00881, 00878, and 0050. Utilizing cutting-edge algorithms, it processes extensive stock data and news to deliver impactful analysis on the semiconductor industry and AI sector advancements. Our predictive models are at the core of the app, offering estimations on stock trends and actionable trading recommendations.
 
-[LINK](https://jackyleedesign.github.io/chatGPT4o-taiwan-stocks-prediction/)
+[LINK](https://jackyleedesign.github.io/chatGPT-taiwan-stocks-prediction/)
 
-![image](https://raw.githubusercontent.com/JackyLeeDesign/chatGPT4o-taiwan-stocks-prediction/main/demo.png)
+![image](https://raw.githubusercontent.com/JackyLeeDesign/chatGPT-taiwan-stocks-prediction/main/demo.png)
 
 ## 🚨 Important Disclaimer:
 Please note that investing in stocks carries inherent risks, including the potential for loss. The creators of this website will not be held responsible for any financial outcomes. All content provided herein is for educational purposes only. We strongly advise users to perform thorough research and exercise caution when making investment decisions.
