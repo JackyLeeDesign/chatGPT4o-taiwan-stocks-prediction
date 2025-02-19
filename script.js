@@ -18,7 +18,7 @@ function formateData(date) {
 
 function getPrediction() {
     console.log("get prediction");
-    var stockNo = ['2330','00881','00878','00933B',];
+    var stockNo = ['2330','00881','00878','0050',];
     let resultHtml = "";
     var resultElement = document.getElementById('predictionResult');
     // call the server to get the prediction data
