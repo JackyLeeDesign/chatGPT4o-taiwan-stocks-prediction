@@ -1,6 +1,6 @@
 # Taiwan-Stock-Prediction-App 📈
 
-Welcome to the `Taiwan-Stock-Prediction-App` repository! This web application is designed to provide deep analytical insights into the Taiwanese stock market, with a special focus on prominent stocks such as TSMC and the Taiwan 50 ETF. Utilizing cutting-edge algorithms, it processes extensive stock data and news to deliver impactful analysis on the semiconductor industry and AI sector advancements. Our predictive models are at the core of the app, offering estimations on stock trends and actionable trading recommendations.
+Welcome to the `Taiwan-Stock-Prediction-App` repository! This web application is designed to provide deep analytical insights into the Taiwanese stock market, with a special focus on prominent ETFs such as 00881, 00878, and 00933B. Utilizing cutting-edge algorithms, it processes extensive stock data and news to deliver impactful analysis on the semiconductor industry and AI sector advancements. Our predictive models are at the core of the app, offering estimations on stock trends and actionable trading recommendations.
 
 [LINK](https://jackyleedesign.github.io/chatGPT4o-taiwan-stocks-prediction/)
 
@@ -11,8 +11,8 @@ Please note that investing in stocks carries inherent risks, including the poten
 
 ---
 
-# Define prompt for GPT-4 🤖
-The following prompt was crafted to interact with GPT-4, aiming to simulate a scenario where a financial analyst (played by GPT-4) provides stock price predictions and technical analysis:
+# Define prompt for GPT-o3-mini 🤖
+The following prompt was crafted to interact with GPT-o3-mini, aiming to simulate a scenario where a financial analyst (played by GPT-4) provides stock price predictions and technical analysis:
 
 ```python
 # Define prompt for GPT-4  
@@ -50,7 +50,7 @@ prompt = (
 
 `news_summary` represents news data fetched via Python calling Bing News Search API.
 `formatted_stock_data` includes stock price data from the last six months.
-`stock_industry` refers to the percentage share of each company in the Taiwan 50 ETF.
+`stock_industry` refers to the percentage share of each company in the Taiwan ETF.
 `kd_value` contains the K and D values obtained through Python scraping for the current and previous days.
 
 ---
